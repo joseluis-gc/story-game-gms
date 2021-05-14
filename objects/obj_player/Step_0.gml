@@ -3,6 +3,10 @@
 switch (state)
 {
 	case st.normal:
+	
+		//mask
+		mask_index = spr_player_mask;
+	
 		hsp = (keyboard_check(ord("D")) || keyboard_check(vk_right)) - (keyboard_check(ord("A")) || keyboard_check(vk_left));
 		hsp *= move_speed;
 		
@@ -41,6 +45,34 @@ switch (state)
 		
 		x += hsp;
 		y += vsp;
+		
+		
+		if (!tile_ver_collision(1)){
+			if (vsp<0) sprite_index = spr_player_jump;
+			else sprite_index = spr_player_fall;
+		}
+		else if (hsp!=0){
+			sprite_index = spr_player_move_strip6;
+			image_xscale = sign(hsp);
+		}
+		else{
+			sprite_index = spr_player_idle_strip2;
+		}
+		
+		if(keyboard_check_pressed(attack_key) && tile_ver_collision(1)){
+			state_set(st.attack);
+		}
+		
+	break;
+	
+	
+	case st.attack:
+		sprite_index = spr_player_attack_strip4;
+		mask_index = spr_player_mask_attack;
+		
+		if(floor(image_index) == image_number - 1){
+			state_set(st.normal)
+		}
 		
 	break;
 }

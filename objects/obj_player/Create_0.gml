@@ -1,8 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 move_speed = 4;
-jump_speed = 10;
+jump_speed = 12;
 grav = 1;
+attack_key = vk_space;
 
 hsp = 0;
 vsp = 0;
