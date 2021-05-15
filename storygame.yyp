@@ -5,6 +5,8 @@
     {"id":{"name":"state_set","path":"scripts/state_set/state_set.yy",},"order":2,},
     {"id":{"name":"spr_player_attack_strip4","path":"sprites/spr_player_attack_strip4/spr_player_attack_strip4.yy",},"order":0,},
     {"id":{"name":"spr_tl_water","path":"sprites/spr_tl_water/spr_tl_water.yy",},"order":2,},
+    {"id":{"name":"obj_enemy0","path":"objects/obj_enemy0/obj_enemy0.yy",},"order":0,},
+    {"id":{"name":"Sprite15","path":"sprites/Sprite15/Sprite15.yy",},"order":0,},
     {"id":{"name":"spr_player_swim_idle","path":"sprites/spr_player_swim_idle/spr_player_swim_idle.yy",},"order":9,},
     {"id":{"name":"tile_hor_collision","path":"scripts/tile_hor_collision/tile_hor_collision.yy",},"order":0,},
     {"id":{"name":"spr_player_hurt","path":"sprites/spr_player_hurt/spr_player_hurt.yy",},"order":3,},
@@ -19,6 +21,7 @@
     {"id":{"name":"spr_tl_detail","path":"sprites/spr_tl_detail/spr_tl_detail.yy",},"order":0,},
     {"id":{"name":"spr_player_mask","path":"sprites/spr_player_mask/spr_player_mask.yy",},"order":6,},
     {"id":{"name":"spr_tl_main","path":"sprites/spr_tl_main/spr_tl_main.yy",},"order":1,},
+    {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -52,6 +55,8 @@
     {"folderPath":"folders/Extensions.yy","order":14,"resourceVersion":"1.0","name":"Extensions","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player.yy","order":1,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tiles.yy","order":2,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Dino.yy","order":3,"resourceVersion":"1.0","name":"Dino","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemy.yy","order":1,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

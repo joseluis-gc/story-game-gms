@@ -35,7 +35,7 @@
     "spriteId": {"name":"spr_player_idle_strip2","path":"sprites/spr_player_idle_strip2/spr_player_idle_strip2.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 5.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
