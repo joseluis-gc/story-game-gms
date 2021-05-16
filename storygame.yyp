@@ -14,6 +14,7 @@
     {"id":{"name":"spr_player_hurt","path":"sprites/spr_player_hurt/spr_player_hurt.yy",},"order":3,},
     {"id":{"name":"tl_main","path":"tilesets/tl_main/tl_main.yy",},"order":0,},
     {"id":{"name":"spr_player_idle_strip2","path":"sprites/spr_player_idle_strip2/spr_player_idle_strip2.yy",},"order":4,},
+    {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},"order":0,},
     {"id":{"name":"spr_player_fall","path":"sprites/spr_player_fall/spr_player_fall.yy",},"order":2,},
     {"id":{"name":"spr_player_mask_attack","path":"sprites/spr_player_mask_attack/spr_player_mask_attack.yy",},"order":7,},
     {"id":{"name":"obj_enemy01","path":"objects/obj_enemy01/obj_enemy01.yy",},"order":1,},
@@ -60,6 +61,7 @@
     {"folderPath":"folders/Sprites/Tiles.yy","order":2,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Dino.yy","order":3,"resourceVersion":"1.0","name":"Dino","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Enemy.yy","order":1,"resourceVersion":"1.0","name":"Enemy","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Gui.yy","order":4,"resourceVersion":"1.0","name":"Gui","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

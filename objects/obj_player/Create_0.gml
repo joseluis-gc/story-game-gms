@@ -8,6 +8,9 @@ attack_key = vk_space;
 hsp = 0;
 vsp = 0;
 
+lives = 3;
+
+
 //states
 enum st
 {
@@ -31,3 +34,12 @@ view_set_camera(0, cam);
 
 window_set_size(width*scale, height*scale);
 surface_resize(application_surface, width*scale, height*scale);
+
+
+
+//gui
+display_set_gui_size(width, height);
+
+
+
+
