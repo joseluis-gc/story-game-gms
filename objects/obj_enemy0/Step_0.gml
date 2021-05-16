@@ -19,12 +19,12 @@ switch(state){
 		}
 		
 		
-		//if(tile_ver_collision(1)){
+		if(tile_ver_collision(1)){
 			//flip image
 			image_xscale = sign(hsp);
 	
 			x += hsp;
-		//}
+		}
 		
 		//hurt
 		if(place_meeting(x,y,obj_player) && obj_player.state == st.attack){
