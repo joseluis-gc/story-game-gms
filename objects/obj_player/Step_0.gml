@@ -59,8 +59,25 @@ switch (state)
 			sprite_index = spr_player_idle_strip2;
 		}
 		
+		//atack
 		if(keyboard_check_pressed(attack_key) && tile_ver_collision(1)){
 			state_set(st.attack);
+		}
+		
+		//hurt
+		var enemy_col = instance_place(x, y, obj_enemy);
+		if(enemy_col != noone){
+			kb_x = sign(x - enemy_col.x);
+			image_xscale = -kb_x;
+			if(image_xscale == 0){
+				image_xscale = 1;
+			}
+			lives --;
+			state_set(st.hurt);
+		}
+		
+		if(lives == 0 || y > room_height){
+			state_set(st.dead);
 		}
 		
 	break;
@@ -75,4 +92,35 @@ switch (state)
 		}
 		
 	break;
+	
+	
+	case st.hurt:
+		sprite_index = spr_player_hurt;
+		
+		x += kb_x * kb_speed;
+		
+		hurt_time ++;
+		if(hurt_time > 4 || tile_hor_collision(kb_x * kb_speed)){
+			state_set(st.normal);
+			hurt_time = 0;
+		}
+		
+	break;
+	
+	
+	case st.dead:
+		sprite_index = spr_player_dead_strip5;
+		
+		if(floor(image_index) == image_number - 1){
+			image_speed = 0;
+			hurt_time++;
+			if(hurt_time > 10){
+				room_restart();
+			}
+		}
+	
+	break;
+	
 }
+
+

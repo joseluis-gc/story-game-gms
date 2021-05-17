@@ -10,6 +10,11 @@ vsp = 0;
 
 lives = 3;
 
+kb_x = 0;
+kb_speed = 6;
+
+hurt_time = 0;
+
 
 //states
 enum st
