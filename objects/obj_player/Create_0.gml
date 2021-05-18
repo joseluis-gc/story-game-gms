@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!audio_is_playing(background1)){
+	audio_play_sound(background1, 10, true);
+}
+
+
 move_speed = 3;
 jump_speed = 12;
 grav = 1;
@@ -9,6 +14,7 @@ hsp = 0;
 vsp = 0;
 
 lives = 3;
+coins = 0;
 
 kb_x = 0;
 kb_speed = 6;

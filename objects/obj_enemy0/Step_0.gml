@@ -63,7 +63,9 @@ switch(state){
 	case st.dead:
 	
 		sprite_index = dino_hurt;
+
 		if(floor(image_index) == image_number - 1){
+			audio_play_sound(death,10,false);
 			instance_destroy();
 		}
 	
