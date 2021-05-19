@@ -115,6 +115,7 @@ switch (state)
 			image_speed = 0;
 			hurt_time++;
 			if(hurt_time > 10){
+				lives = 3;
 				room_restart();
 			}
 		}

@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_next_level","path":"sprites/spr_next_level/spr_next_level.yy",},"order":0,},
     {"id":{"name":"spr_msg_more2","path":"sprites/spr_msg_more2/spr_msg_more2.yy",},"order":2,},
     {"id":{"name":"tile_ver_collision","path":"scripts/tile_ver_collision/tile_ver_collision.yy",},"order":1,},
     {"id":{"name":"msg_static","path":"scripts/msg_static/msg_static.yy",},"order":3,},
@@ -20,6 +21,7 @@
     {"id":{"name":"spr_msg_more0","path":"sprites/spr_msg_more0/spr_msg_more0.yy",},"order":2,},
     {"id":{"name":"spr_player_swim_idle","path":"sprites/spr_player_swim_idle/spr_player_swim_idle.yy",},"order":9,},
     {"id":{"name":"spr_npc0","path":"sprites/spr_npc0/spr_npc0.yy",},"order":0,},
+    {"id":{"name":"level2","path":"rooms/level2/level2.yy",},"order":1,},
     {"id":{"name":"tile_hor_collision","path":"scripts/tile_hor_collision/tile_hor_collision.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":2,},
     {"id":{"name":"dino_hurt","path":"sprites/dino_hurt/dino_hurt.yy",},"order":3,},
@@ -31,6 +33,7 @@
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":0,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":0,},
     {"id":{"name":"spr_msg_arrow2","path":"sprites/spr_msg_arrow2/spr_msg_arrow2.yy",},"order":0,},
+    {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},"order":1,},
     {"id":{"name":"spr_player_idle_strip2","path":"sprites/spr_player_idle_strip2/spr_player_idle_strip2.yy",},"order":4,},
     {"id":{"name":"spr_msg_more1","path":"sprites/spr_msg_more1/spr_msg_more1.yy",},"order":2,},
     {"id":{"name":"snd_coin","path":"sounds/snd_coin/snd_coin.yy",},"order":2,},
@@ -45,6 +48,7 @@
     {"id":{"name":"spr_msg_arrow","path":"sprites/spr_msg_arrow/spr_msg_arrow.yy",},"order":2,},
     {"id":{"name":"Font_Gui","path":"fonts/Font_Gui/Font_Gui.yy",},"order":0,},
     {"id":{"name":"spr_msg_grid0","path":"sprites/spr_msg_grid0/spr_msg_grid0.yy",},"order":1,},
+    {"id":{"name":"obj_next_level","path":"objects/obj_next_level/obj_next_level.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_player_move_strip6","path":"sprites/spr_player_move_strip6/spr_player_move_strip6.yy",},"order":8,},
     {"id":{"name":"spr_msg_more","path":"sprites/spr_msg_more/spr_msg_more.yy",},"order":4,},
@@ -55,7 +59,7 @@
     {"id":{"name":"spr_player_mask","path":"sprites/spr_player_mask/spr_player_mask.yy",},"order":6,},
     {"id":{"name":"spr_tl_main","path":"sprites/spr_tl_main/spr_tl_main.yy",},"order":1,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"level1","path":"rooms/level1/level1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -69,7 +73,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"level1","path":"rooms/level1/level1.yy",},},
+    {"roomId":{"name":"level2","path":"rooms/level2/level2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -101,6 +106,8 @@
     {"folderPath":"folders/Sprites/dynamictext/extra textboxes/2 - 96x96.yy","order":3,"resourceVersion":"1.0","name":"2 - 96x96","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Npcs.yy","order":3,"resourceVersion":"1.0","name":"Npcs","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Npcs.yy","order":7,"resourceVersion":"1.0","name":"Npcs","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Game.yy","order":4,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Game.yy","order":8,"resourceVersion":"1.0","name":"Game","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},

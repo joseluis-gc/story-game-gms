@@ -13,8 +13,8 @@ attack_key = vk_space;
 hsp = 0;
 vsp = 0;
 
-lives = 3;
-coins = 0;
+//lives = 3;
+//coins = 0;
 
 kb_x = 0;
 kb_speed = 6;

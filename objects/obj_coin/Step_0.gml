@@ -1,5 +1,5 @@
 if(place_meeting(x,y,obj_player) && !collected){
-	obj_player.coins++;
+	coins++;
 	image_index = 0;
 	collected = true;
 	audio_play_sound(snd_coin,10,false);
