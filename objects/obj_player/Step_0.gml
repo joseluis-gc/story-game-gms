@@ -4,6 +4,8 @@ switch (state)
 {
 	case st.normal:
 	
+		var in_water = tilemap_get_at_pixel(global.water_tilemap, x,y);
+	
 		//mask
 		mask_index = spr_player_mask;
 	
@@ -14,7 +16,7 @@ switch (state)
 		
 		
 		//jump
-		if(jump && tile_ver_collision(1)){
+		if(jump && (tile_ver_collision(1)|| in_water)){
 			vsp = -jump_speed;
 		}
 		
@@ -22,6 +24,11 @@ switch (state)
 		//gravity 
 		if(vsp < 10 ){
 			vsp += grav;
+		}
+		
+		//water
+		if(in_water){
+			vsp = clamp(vsp, -jump_speed, 1);
 		}
 		
 		
@@ -46,8 +53,20 @@ switch (state)
 		x += hsp;
 		y += vsp;
 		
-		
-		if (!tile_ver_collision(1)){
+		//animaciones
+		if(in_water){
+			if(hsp != 0){
+				sprite_index = spr_player_swim_move_strip6;
+				image_xscale = sign(hsp);
+			}
+			else if(vsp < 0){
+				sprite_index = spr_player_swim_move_strip6;
+			}
+			else{
+				sprite_index = spr_player_swim_idle;
+			}
+		}
+		else if (!tile_ver_collision(1)){
 			if (vsp<0) sprite_index = spr_player_jump;
 			else sprite_index = spr_player_fall;
 		}
