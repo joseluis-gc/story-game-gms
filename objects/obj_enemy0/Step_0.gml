@@ -65,6 +65,18 @@ switch(state){
 		sprite_index = dino_hurt;
 
 		if(floor(image_index) == image_number - 1){
+			
+			//item drop
+			if(irandom(1) == 0){
+				var _type = irandom(item_num-1);
+				
+				var _inst = instance_create_layer(x,y,"Instances",obj_item);
+				_inst.item_type = _type;
+				_inst.hsp = sign(x - obj_player.x);
+				
+			}
+			//item drop end
+			
 			audio_play_sound(death,10,false);
 			instance_destroy();
 		}
