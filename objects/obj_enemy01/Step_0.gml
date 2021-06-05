@@ -1,3 +1,8 @@
+if(global.pause){
+	exit;
+}
+
+
 switch(state){
 
 	case st.normal:

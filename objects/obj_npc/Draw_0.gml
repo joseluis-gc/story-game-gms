@@ -1,3 +1,8 @@
+if(global.pause){
+	exit;
+}
+
+
 draw_self();
 
 draw_set_font(Font_MSG);

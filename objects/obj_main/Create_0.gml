@@ -2,6 +2,10 @@ randomize();
 //crear inv
 global.inv = ds_list_create();
 
+global.pause = false;
+
+
+
 //enum de items
 enum item{
 	diamond,
