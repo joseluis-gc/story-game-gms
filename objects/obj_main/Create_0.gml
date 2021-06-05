@@ -34,3 +34,19 @@ fade_alpha = 0;
 lives = 3;
 globalvar coins;
 coins = 0;
+
+
+//load
+if(instance_exists(obj_load)){
+	lives = obj_load.lives_load;
+	coins= obj_load.coins_load;
+	ds_list_read(global.inv, obj_load.load_inv);
+	instance_destroy(obj_load);
+}
+
+
+
+
+
+
+

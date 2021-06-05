@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+layer_x(layer_city, camera_get_view_x(view_camera)/8);
+layer_x(layer_sky, camera_get_view_x(view_camera)/2);
+
 if (keyboard_check(vk_escape)){
 	global.pause = !global.pause;
 	

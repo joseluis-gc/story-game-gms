@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-menu_items[0] = "Play";
-menu_items[1] = "Quit";
+menu_items[0] = "New Game";
+if(file_exists("save.ini")){
+	menu_items[1] = "Load Game";
+}
+menu_items[2] = "Quit";
+
 
 menu_selected = 0;
 
