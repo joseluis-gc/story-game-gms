@@ -89,7 +89,7 @@ switch (state)
 		
 		//hurt
 		var enemy_col = instance_place(x, y, obj_enemy);
-		if(enemy_col != noone){
+		if(enemy_col != noone && obj_player.vsp <= 0 ){
 			kb_x = sign(x - enemy_col.x);
 			image_xscale = -kb_x;
 			if(image_xscale == 0){

@@ -1,5 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if(audio_is_playing(iwbtg) == false && played == false){
+	audio_play_sound(iwbtg,10,false);
+	played = true;
+}
+
+
+if(keyboard_check_pressed(vk_down) || keyboard_check_pressed(vk_up)){
+	if(audio_is_playing(punch) == false){
+		audio_play_sound(punch,10,false);
+	}else if(audio_is_playing(punch) == true){
+		audio_stop_sound(punch);
+		audio_play_sound(punch,10,false);
+	}
+}
+
 menu_selected += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 
 var array_size = array_length_1d(menu_items);
@@ -19,14 +35,12 @@ if(keyboard_check_pressed(vk_enter)){
 	switch(menu_selected){
 		
 		case 0: 
+			audio_stop_sound(iwbtg);
 			room_goto_next();
 		break;
 		
 		case 1:
-			game_end();
-		break;	
-		
-		case 2:
+			audio_stop_sound(iwbtg);
 			ini_open("save.ini");
 			
 			var load = instance_create_layer(0,0,"Instances", obj_load);
@@ -45,8 +59,11 @@ if(keyboard_check_pressed(vk_enter)){
 			
 			
 		break;	
-				
 		
-		
+		case 2:
+			audio_stop_sound(iwbtg);
+			game_end();
+		break;	
+			
 	}
 }

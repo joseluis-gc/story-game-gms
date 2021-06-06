@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":62.0,"displayName":"default","resourceVersion":"1.0","name":"3e8d9ea9-c48b-441c-86ce-daea21fbef9e","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "dynamictext",
     "path": "folders/Sprites/dynamictext.yy",

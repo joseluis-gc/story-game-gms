@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6cf3dc21-8342-4eb0-af2a-35ef310ff63c","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "0 - 48x48",
     "path": "folders/Sprites/dynamictext/extra textboxes/0 - 48x48.yy",

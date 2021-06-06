@@ -39,6 +39,18 @@ switch(state){
 			state_set(st.hurt);
 		}
 		
+		
+		//my hurt on jump bora
+		if(place_meeting(x,y,obj_player) && obj_player.vsp > 0){
+			kb_x = sign(x - obj_player.x);
+			image_xscale = -kb_x;
+			hp--;
+			state_set(st.hurt);
+		}
+		
+		
+		
+		
 		//dead
 		
 		if(hp <= 0){
