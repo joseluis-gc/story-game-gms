@@ -28,7 +28,8 @@ enum st
 	normal,
 	attack,
 	hurt,
-	dead
+	dead,
+	angry
 }
 
 state = st.normal;

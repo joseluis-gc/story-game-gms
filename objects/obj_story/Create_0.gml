@@ -8,3 +8,4 @@ char = 0;
 
 draw_set_font(Font_MSG);
 
+played = false;
