@@ -19,7 +19,7 @@ switch(state){
 		}
 		
 		//ledge
-		if(!tilemap_get_at_pixel(global.tilemap, x + hsp, y + 24)){
+		if(!tilemap_get_at_pixel(global.tilemap, x + hsp, y + 96)){
 			hsp = -hsp;
 		}
 		
