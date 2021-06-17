@@ -81,6 +81,11 @@ switch(state){
 	case st.dead:
 	
 		sprite_index = dino_hurt;
+		
+		
+		if(place_meeting(x,y,obj_player)){
+			
+		}
 
 		if(floor(image_index) == image_number - 1){
 			
