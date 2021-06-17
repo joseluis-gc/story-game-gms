@@ -45,6 +45,7 @@ switch(state){
 			kb_x = sign(x - obj_player.x);
 			image_xscale = -kb_x;
 			hp--;
+			obj_player.vsp -= 20;
 			state_set(st.hurt);
 		}
 		

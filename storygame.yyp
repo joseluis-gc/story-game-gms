@@ -53,6 +53,7 @@
     {"id":{"name":"Sprite45","path":"sprites/Sprite45/Sprite45.yy",},"order":0,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":0,},
     {"id":{"name":"g1031","path":"sprites/g1031/g1031.yy",},"order":0,},
+    {"id":{"name":"Ocean_SpriteSheet","path":"sprites/Ocean_SpriteSheet/Ocean_SpriteSheet.yy",},"order":6,},
     {"id":{"name":"Tileset","path":"sprites/Tileset/Tileset.yy",},"order":5,},
     {"id":{"name":"spr_msg_arrow2","path":"sprites/spr_msg_arrow2/spr_msg_arrow2.yy",},"order":0,},
     {"id":{"name":"obj_main","path":"objects/obj_main/obj_main.yy",},"order":1,},

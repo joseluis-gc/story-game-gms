@@ -33,7 +33,7 @@ switch(state){
 		
 		//hurt
 		if(place_meeting(x,y,obj_player) && obj_player.state == st.attack){
-			kb_x = sign(x - obj_player.x);
+			kb_x = sign(x - obj_player.x - 20);
 			image_xscale = -kb_x;
 			hp--;
 			state_set(st.hurt);
@@ -44,6 +44,7 @@ switch(state){
 		if(place_meeting(x,y,obj_player) && obj_player.vsp > 0){
 			kb_x = sign(x - obj_player.x);
 			image_xscale = -kb_x;
+			obj_player.vsp -= 20;
 			hp--;
 			state_set(st.hurt);
 		}
