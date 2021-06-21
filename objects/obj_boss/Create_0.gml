@@ -1,4 +1,4 @@
-move_speed = 1;
+move_speed = 2;
 
 hsp = choose(move_speed, -move_speed);
 

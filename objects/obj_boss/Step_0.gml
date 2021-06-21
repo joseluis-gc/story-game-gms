@@ -58,6 +58,11 @@ switch(state){
 			state_set(st.dead);
 		}
 		
+		//move faster
+		if(hp <= 4){
+			move_speed = 4;
+		}
+		
 		
 	break;
 	
