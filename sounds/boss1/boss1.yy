@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "punch.mp3",
-  "duration": 1.567347,
+  "soundFile": "boss1.mp3",
+  "duration": 186.672,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "punch",
+  "name": "boss1",
   "tags": [],
   "resourceType": "GMSound",
 }

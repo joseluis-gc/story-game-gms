@@ -64,6 +64,18 @@ switch(state){
 		}
 		
 		
+		//boss music
+		if(distance_to_object(obj_player) < 900 && !audio_is_playing(boss1)){
+		
+			//play music
+			audio_play_sound(boss1, 8, true);
+			audio_sound_gain(boss1, 1, 2000);
+			
+			audio_sound_gain(background1, 0, 2000);
+		
+		}
+		
+		
 	break;
 	
 	case st.hurt:

@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "iwbtg.mp3",
-  "duration": 8.991122,
+  "duration": 8.986122,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

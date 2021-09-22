@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "background1.mp3",
-  "duration": 259.453156,
+  "duration": 259.448151,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

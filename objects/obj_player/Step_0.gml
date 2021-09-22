@@ -4,6 +4,17 @@ if(global.pause){
 	exit;
 }
 
+/*
+if(room == level2){
+	audio_stop_sound(background1);
+	if(audio_is_playing(btoads) == false && played == false){
+	audio_play_sound(btoads,10,false);
+	//played = true;
+	}
+	
+}
+*/
+
 switch (state)
 {
 	case st.normal:
