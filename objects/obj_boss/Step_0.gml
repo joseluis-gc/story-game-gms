@@ -60,16 +60,22 @@ switch(state){
 		
 		//move faster
 		if(hp <= 4){
-			move_speed = 4;
+			x += hsp*2;
 		}
+		
+		if(hp <= 6 && hp > 4){
+			//state_set(st.angry);
+			x += hsp*1.5;
+		}
+		
 		
 		
 		//boss music
 		if(distance_to_object(obj_player) < 900 && !audio_is_playing(boss1)){
 		
 			//play music
-			audio_play_sound(boss1, 8, true);
-			audio_sound_gain(boss1, 1, 2000);
+			audio_play_sound(bossfight, 8, true);
+			audio_sound_gain(bossfight, 1, 2000);
 			
 			audio_sound_gain(background1, 0, 2000);
 		
@@ -102,6 +108,7 @@ switch(state){
 	
 	
 	case st.angry:
+		sprite_index = Sprite45;
 		x += hsp * 2;
 		
 		//walls
@@ -135,7 +142,12 @@ switch(state){
 			//item drop end
 			
 			audio_play_sound(death,10,false);
+			
+			//boss music end
+			audio_sound_gain(bossfight, 0, 2000);
 			instance_destroy();
+			audio_play_sound(triunph, 8, true);
+			audio_sound_gain(triunph, 1, 2000);
 		}
 	
 	break;

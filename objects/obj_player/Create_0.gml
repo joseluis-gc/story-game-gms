@@ -20,7 +20,7 @@ kb_x = 0;
 kb_speed = 6;
 
 hurt_time = 0;
-
+inv = 0;
 
 //states
 enum st

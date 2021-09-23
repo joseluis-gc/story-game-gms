@@ -20,6 +20,12 @@ switch (state)
 	case st.normal:
 	
 		var in_water = tilemap_get_at_pixel(global.water_tilemap, x,y);
+		
+		//invencibility
+		if inv > 0 
+		{
+		    inv -= 1;
+		}
 	
 		//mask
 		mask_index = spr_player_mask;
@@ -100,10 +106,12 @@ switch (state)
 		
 		//hurt
 		var enemy_col = instance_place(x, y, obj_enemy);
-		if(enemy_col != noone && obj_player.vsp <= 0){
+		if(enemy_col != noone && obj_player.vsp <= 0 && inv <= 0)
+		{
 			kb_x = sign(x - enemy_col.x);
 			image_xscale = -kb_x;
-			if(image_xscale == 0){
+			if(image_xscale == 0)
+			{
 				image_xscale = 1;
 			}
 			
@@ -111,7 +119,7 @@ switch (state)
 				lives --;
 				state_set(st.hurt);
 			}
-			
+			inv = 120;			
 		}
 		
 		if(lives == 0 || y > room_height){
